@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".presentation.dashboard.presentation.MainFragment">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/carousel_view"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/carousel_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:dotsColor="@color/dark_blue"
+            app:dotsSize="8dp"
+            app:dotsSpacing="3dp"
+            app:layout_constraintBottom_toBottomOf="@id/carousel_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:selectedDotColor="@color/dark_gold" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/privacy_policy"
+            app:layout_constraintTop_toBottomOf="@id/carousel_view"
+            app:strokeColor="@color/gold_stroke"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_gradiant">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/web_icon"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/web_icon"
+                    android:contentDescription="@null"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/web_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/gold_stroke"
+                    android:shadowDx="3"
+                    android:shadowRadius="2"
+                    android:text="@string/website"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toBottomOf="@id/web_icon"
+                    app:layout_constraintStart_toEndOf="@id/web_icon"
+                    app:layout_constraintTop_toTopOf="@id/web_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:layout_constraintEnd_toEndOf="@id/web_view"
+            app:layout_constraintStart_toStartOf="@id/web_view"
+            app:layout_constraintTop_toBottomOf="@id/web_view"
+            app:layout_constraintBottom_toTopOf="@id/mini_game"
+            app:strokeColor="@color/gold_stroke"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_gradiant">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/privacy_icon"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/privacy_icon"
+                    android:contentDescription="@null"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/privacy_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/gold_stroke"
+                    android:shadowDx="3"
+                    android:shadowRadius="2"
+                    android:text="@string/privacy_policy"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toBottomOf="@id/privacy_icon"
+                    app:layout_constraintStart_toEndOf="@id/privacy_icon"
+                    app:layout_constraintTop_toTopOf="@id/privacy_icon" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mini_game"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:layout_constraintEnd_toEndOf="@id/privacy_policy"
+            app:layout_constraintStart_toStartOf="@id/privacy_policy"
+            app:layout_constraintTop_toBottomOf="@id/privacy_policy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeColor="@color/gold_stroke"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_gradiant">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/minigame_icon"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/game_icon"
+                    android:contentDescription="@null"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mini_game_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/gold_stroke"
+                    android:shadowDx="3"
+                    android:shadowRadius="2"
+                    android:text="@string/mini_game"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toBottomOf="@id/minigame_icon"
+                    app:layout_constraintStart_toEndOf="@id/minigame_icon"
+                    app:layout_constraintTop_toTopOf="@id/minigame_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

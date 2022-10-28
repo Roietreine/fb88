@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FB88</string>
+    <string name="role_a_dice">Role a dice</string>
+    <string name="press_to_play">Press to play</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mini_game">Trò chơi nhỏ</string>
+    <string name="website">Đăng Ký</string>
+    <string name="privacy_policy">Đăng nhập</string>
+</resources>

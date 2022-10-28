@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "949465943703",
+    "firebase_url": "https://nhacaichauau-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nhacaichauau",
+    "storage_bucket": "nhacaichauau.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949465943703:android:86dcdcf064e37b9416e3d2",
+        "android_client_info": {
+          "package_name": "jun88.rr.fb88"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949465943703-bh9oe1fuf8a0boik4l4egup53510rl4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA7NW6_O5pS0nztfKVU92y9054hLLLad0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949465943703-bh9oe1fuf8a0boik4l4egup53510rl4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949465943703:android:8573957b16f4fe0516e3d2",
+        "android_client_info": {
+          "package_name": "jun88.rr.nhacaichauau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949465943703-bh9oe1fuf8a0boik4l4egup53510rl4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA7NW6_O5pS0nztfKVU92y9054hLLLad0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949465943703-bh9oe1fuf8a0boik4l4egup53510rl4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
